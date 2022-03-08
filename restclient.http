@@ -1,0 +1,31 @@
+GET http://localhost:3000/teams
+
+###
+
+POST http://localhost:3000/players/:id HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Messi",
+    "team": "Barcelona",
+    
+}
+
+###
+
+ GET http://localhost:3000/teams/1
+
+
+###
+
+DELETE http://localhost:3000/teams/1
+
+###
+
+PUT http://localhost:3000/players/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Neymar",
+    "team": "Brasil"
+}
